@@ -1,0 +1,10 @@
+C:\Users\lucas.sleocadio\Documents\Visual Studio 2019\ProjetoSistemaTI106\EmpresaABC\AppComponentes\bin\Debug\AppComponentes.exe.config
+C:\Users\lucas.sleocadio\Documents\Visual Studio 2019\ProjetoSistemaTI106\EmpresaABC\AppComponentes\bin\Debug\AppComponentes.exe
+C:\Users\lucas.sleocadio\Documents\Visual Studio 2019\ProjetoSistemaTI106\EmpresaABC\AppComponentes\bin\Debug\AppComponentes.pdb
+C:\Users\lucas.sleocadio\Documents\Visual Studio 2019\ProjetoSistemaTI106\EmpresaABC\AppComponentes\obj\Debug\AppComponentes.csproj.AssemblyReference.cache
+C:\Users\lucas.sleocadio\Documents\Visual Studio 2019\ProjetoSistemaTI106\EmpresaABC\AppComponentes\obj\Debug\AppComponentes.frmComponentes.resources
+C:\Users\lucas.sleocadio\Documents\Visual Studio 2019\ProjetoSistemaTI106\EmpresaABC\AppComponentes\obj\Debug\AppComponentes.Properties.Resources.resources
+C:\Users\lucas.sleocadio\Documents\Visual Studio 2019\ProjetoSistemaTI106\EmpresaABC\AppComponentes\obj\Debug\AppComponentes.csproj.GenerateResource.cache
+C:\Users\lucas.sleocadio\Documents\Visual Studio 2019\ProjetoSistemaTI106\EmpresaABC\AppComponentes\obj\Debug\AppComponentes.csproj.CoreCompileInputs.cache
+C:\Users\lucas.sleocadio\Documents\Visual Studio 2019\ProjetoSistemaTI106\EmpresaABC\AppComponentes\obj\Debug\AppComponentes.exe
+C:\Users\lucas.sleocadio\Documents\Visual Studio 2019\ProjetoSistemaTI106\EmpresaABC\AppComponentes\obj\Debug\AppComponentes.pdb
