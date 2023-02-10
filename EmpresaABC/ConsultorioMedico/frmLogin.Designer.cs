@@ -43,7 +43,7 @@ namespace ConsultorioMedico
             // pctLogo
             // 
             this.pctLogo.Image = ((System.Drawing.Image)(resources.GetObject("pctLogo.Image")));
-            this.pctLogo.Location = new System.Drawing.Point(62, 92);
+            this.pctLogo.Location = new System.Drawing.Point(104, 114);
             this.pctLogo.Name = "pctLogo";
             this.pctLogo.Size = new System.Drawing.Size(211, 264);
             this.pctLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -53,7 +53,7 @@ namespace ConsultorioMedico
             // lblUsuario
             // 
             this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Location = new System.Drawing.Point(308, 92);
+            this.lblUsuario.Location = new System.Drawing.Point(410, 114);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(43, 13);
             this.lblUsuario.TabIndex = 1;
@@ -62,7 +62,7 @@ namespace ConsultorioMedico
             // lblSenha
             // 
             this.lblSenha.AutoSize = true;
-            this.lblSenha.Location = new System.Drawing.Point(308, 153);
+            this.lblSenha.Location = new System.Drawing.Point(410, 175);
             this.lblSenha.Name = "lblSenha";
             this.lblSenha.Size = new System.Drawing.Size(38, 13);
             this.lblSenha.TabIndex = 3;
@@ -71,37 +71,41 @@ namespace ConsultorioMedico
             // txtUsuario
             // 
             this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsuario.Location = new System.Drawing.Point(311, 108);
+            this.txtUsuario.Location = new System.Drawing.Point(413, 130);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(180, 26);
-            this.txtUsuario.TabIndex = 2;
+            this.txtUsuario.TabIndex = 0;
+            this.txtUsuario.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtUsuario_KeyDown);
             // 
             // txtSenha
             // 
             this.txtSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSenha.Location = new System.Drawing.Point(311, 169);
+            this.txtSenha.Location = new System.Drawing.Point(413, 191);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = '♥';
             this.txtSenha.Size = new System.Drawing.Size(180, 26);
-            this.txtSenha.TabIndex = 4;
+            this.txtSenha.TabIndex = 1;
+            this.txtSenha.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSenha_KeyDown);
             // 
             // bntEntrar
             // 
-            this.bntEntrar.Location = new System.Drawing.Point(311, 333);
+            this.bntEntrar.Location = new System.Drawing.Point(413, 355);
             this.bntEntrar.Name = "bntEntrar";
             this.bntEntrar.Size = new System.Drawing.Size(75, 23);
-            this.bntEntrar.TabIndex = 5;
+            this.bntEntrar.TabIndex = 2;
             this.bntEntrar.Text = "&Entrar";
             this.bntEntrar.UseVisualStyleBackColor = true;
+            this.bntEntrar.Click += new System.EventHandler(this.bntEntrar_Click);
             // 
             // btnSair
             // 
-            this.btnSair.Location = new System.Drawing.Point(416, 333);
+            this.btnSair.Location = new System.Drawing.Point(518, 355);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(75, 23);
-            this.btnSair.TabIndex = 6;
+            this.btnSair.TabIndex = 3;
             this.btnSair.Text = "&Sair";
             this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // frmLogin
             // 
@@ -121,6 +125,7 @@ namespace ConsultorioMedico
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmLogin";
+            this.Load += new System.EventHandler(this.frmLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pctLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

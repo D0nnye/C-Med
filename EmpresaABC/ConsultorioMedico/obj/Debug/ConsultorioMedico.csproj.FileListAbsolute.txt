@@ -10,3 +10,4 @@ C:\Users\lucas.sleocadio\Documents\Visual Studio 2019\ProjetoSistemaTI106\Empres
 C:\Users\lucas.sleocadio\Documents\Visual Studio 2019\ProjetoSistemaTI106\EmpresaABC\ConsultorioMedico\obj\Debug\ConsultorioMedico.frmSplash.resources
 C:\Users\lucas.sleocadio\Documents\Visual Studio 2019\ProjetoSistemaTI106\EmpresaABC\ConsultorioMedico\obj\Debug\ConsultorioMedico.frmLogin.resources
 C:\Users\lucas.sleocadio\Documents\Visual Studio 2019\ProjetoSistemaTI106\EmpresaABC\ConsultorioMedico\obj\Debug\ConsultorioMedico.frmMenuPrincipal.resources
+C:\Users\lucas.sleocadio\Documents\Visual Studio 2019\ProjetoSistemaTI106\EmpresaABC\ConsultorioMedico\obj\Debug\ConsultorioMedico.frmConsultas.resources

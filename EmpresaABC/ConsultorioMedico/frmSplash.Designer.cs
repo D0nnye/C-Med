@@ -29,20 +29,23 @@ namespace ConsultorioMedico
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSplash));
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.pgbCarregando = new System.Windows.Forms.ProgressBar();
             this.lblPorcentagem = new System.Windows.Forms.Label();
             this.lblCarregando = new System.Windows.Forms.Label();
             this.pctLogo = new System.Windows.Forms.PictureBox();
+            this.tmrSplash = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pctLogo)).BeginInit();
             this.SuspendLayout();
             // 
-            // progressBar1
+            // pgbCarregando
             // 
-            this.progressBar1.Location = new System.Drawing.Point(324, 321);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(155, 23);
-            this.progressBar1.TabIndex = 1;
+            this.pgbCarregando.Location = new System.Drawing.Point(324, 321);
+            this.pgbCarregando.Name = "pgbCarregando";
+            this.pgbCarregando.Size = new System.Drawing.Size(155, 23);
+            this.pgbCarregando.Step = 15;
+            this.pgbCarregando.TabIndex = 1;
             // 
             // lblPorcentagem
             // 
@@ -63,6 +66,7 @@ namespace ConsultorioMedico
             this.lblCarregando.Size = new System.Drawing.Size(125, 24);
             this.lblCarregando.TabIndex = 3;
             this.lblCarregando.Text = "Carregando...";
+            this.lblCarregando.Visible = false;
             // 
             // pctLogo
             // 
@@ -74,6 +78,12 @@ namespace ConsultorioMedico
             this.pctLogo.TabIndex = 0;
             this.pctLogo.TabStop = false;
             // 
+            // tmrSplash
+            // 
+            this.tmrSplash.Enabled = true;
+            this.tmrSplash.Interval = 750;
+            this.tmrSplash.Tick += new System.EventHandler(this.tmrSplash_Tick);
+            // 
             // frmSplash
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -81,7 +91,7 @@ namespace ConsultorioMedico
             this.ClientSize = new System.Drawing.Size(780, 557);
             this.Controls.Add(this.lblCarregando);
             this.Controls.Add(this.lblPorcentagem);
-            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.pgbCarregando);
             this.Controls.Add(this.pctLogo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -97,9 +107,10 @@ namespace ConsultorioMedico
 
         #endregion
 
-        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.ProgressBar pgbCarregando;
         private System.Windows.Forms.Label lblPorcentagem;
         private System.Windows.Forms.Label lblCarregando;
         private System.Windows.Forms.PictureBox pctLogo;
+        private System.Windows.Forms.Timer tmrSplash;
     }
 }
