@@ -46,28 +46,29 @@ namespace ConsultorioMedico
             this.panel1.Controls.Add(this.btnExcluir);
             this.panel1.Controls.Add(this.btnAlterar);
             this.panel1.Controls.Add(this.btnCadastrar);
-            this.panel1.Location = new System.Drawing.Point(1, 460);
+            this.panel1.Location = new System.Drawing.Point(1, 495);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(779, 97);
+            this.panel1.Size = new System.Drawing.Size(779, 104);
             this.panel1.TabIndex = 0;
             // 
             // btnVoltar
             // 
             this.btnVoltar.Image = ((System.Drawing.Image)(resources.GetObject("btnVoltar.Image")));
-            this.btnVoltar.Location = new System.Drawing.Point(626, 15);
+            this.btnVoltar.Location = new System.Drawing.Point(626, 16);
             this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(150, 65);
+            this.btnVoltar.Size = new System.Drawing.Size(150, 70);
             this.btnVoltar.TabIndex = 4;
             this.btnVoltar.Text = "&Voltar";
             this.btnVoltar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // btnPesquisar
             // 
             this.btnPesquisar.Image = ((System.Drawing.Image)(resources.GetObject("btnPesquisar.Image")));
-            this.btnPesquisar.Location = new System.Drawing.Point(471, 15);
+            this.btnPesquisar.Location = new System.Drawing.Point(471, 16);
             this.btnPesquisar.Name = "btnPesquisar";
-            this.btnPesquisar.Size = new System.Drawing.Size(150, 65);
+            this.btnPesquisar.Size = new System.Drawing.Size(150, 70);
             this.btnPesquisar.TabIndex = 3;
             this.btnPesquisar.Text = "&Pesquisar";
             this.btnPesquisar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -76,9 +77,9 @@ namespace ConsultorioMedico
             // btnExcluir
             // 
             this.btnExcluir.Image = ((System.Drawing.Image)(resources.GetObject("btnExcluir.Image")));
-            this.btnExcluir.Location = new System.Drawing.Point(315, 15);
+            this.btnExcluir.Location = new System.Drawing.Point(315, 16);
             this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(150, 65);
+            this.btnExcluir.Size = new System.Drawing.Size(150, 70);
             this.btnExcluir.TabIndex = 2;
             this.btnExcluir.Text = "&Excluir";
             this.btnExcluir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -87,9 +88,9 @@ namespace ConsultorioMedico
             // btnAlterar
             // 
             this.btnAlterar.Image = ((System.Drawing.Image)(resources.GetObject("btnAlterar.Image")));
-            this.btnAlterar.Location = new System.Drawing.Point(159, 15);
+            this.btnAlterar.Location = new System.Drawing.Point(159, 16);
             this.btnAlterar.Name = "btnAlterar";
-            this.btnAlterar.Size = new System.Drawing.Size(150, 65);
+            this.btnAlterar.Size = new System.Drawing.Size(150, 70);
             this.btnAlterar.TabIndex = 1;
             this.btnAlterar.Text = "&Alterar";
             this.btnAlterar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -98,9 +99,9 @@ namespace ConsultorioMedico
             // btnCadastrar
             // 
             this.btnCadastrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCadastrar.Image")));
-            this.btnCadastrar.Location = new System.Drawing.Point(3, 15);
+            this.btnCadastrar.Location = new System.Drawing.Point(3, 16);
             this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(150, 65);
+            this.btnCadastrar.Size = new System.Drawing.Size(150, 70);
             this.btnCadastrar.TabIndex = 0;
             this.btnCadastrar.Text = "&Cadastrar";
             this.btnCadastrar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -108,9 +109,9 @@ namespace ConsultorioMedico
             // 
             // frmConsultas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(780, 557);
+            this.ClientSize = new System.Drawing.Size(780, 600);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;

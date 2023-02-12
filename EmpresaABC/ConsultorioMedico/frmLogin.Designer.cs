@@ -43,9 +43,9 @@ namespace ConsultorioMedico
             // pctLogo
             // 
             this.pctLogo.Image = ((System.Drawing.Image)(resources.GetObject("pctLogo.Image")));
-            this.pctLogo.Location = new System.Drawing.Point(104, 114);
+            this.pctLogo.Location = new System.Drawing.Point(104, 123);
             this.pctLogo.Name = "pctLogo";
-            this.pctLogo.Size = new System.Drawing.Size(211, 264);
+            this.pctLogo.Size = new System.Drawing.Size(211, 284);
             this.pctLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pctLogo.TabIndex = 0;
             this.pctLogo.TabStop = false;
@@ -53,25 +53,26 @@ namespace ConsultorioMedico
             // lblUsuario
             // 
             this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Location = new System.Drawing.Point(410, 114);
+            this.lblUsuario.Location = new System.Drawing.Point(410, 123);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(43, 13);
+            this.lblUsuario.Size = new System.Drawing.Size(44, 14);
             this.lblUsuario.TabIndex = 1;
             this.lblUsuario.Text = "Usuário";
             // 
             // lblSenha
             // 
             this.lblSenha.AutoSize = true;
-            this.lblSenha.Location = new System.Drawing.Point(410, 175);
+            this.lblSenha.Location = new System.Drawing.Point(410, 188);
             this.lblSenha.Name = "lblSenha";
-            this.lblSenha.Size = new System.Drawing.Size(38, 13);
+            this.lblSenha.Size = new System.Drawing.Size(38, 14);
             this.lblSenha.TabIndex = 3;
             this.lblSenha.Text = "Senha";
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsuario.Location = new System.Drawing.Point(413, 130);
+            this.txtUsuario.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsuario.Location = new System.Drawing.Point(413, 140);
+            this.txtUsuario.MaxLength = 30;
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(180, 26);
             this.txtUsuario.TabIndex = 0;
@@ -79,8 +80,9 @@ namespace ConsultorioMedico
             // 
             // txtSenha
             // 
-            this.txtSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSenha.Location = new System.Drawing.Point(413, 191);
+            this.txtSenha.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSenha.Location = new System.Drawing.Point(413, 206);
+            this.txtSenha.MaxLength = 50;
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = '♥';
             this.txtSenha.Size = new System.Drawing.Size(180, 26);
@@ -89,9 +91,9 @@ namespace ConsultorioMedico
             // 
             // bntEntrar
             // 
-            this.bntEntrar.Location = new System.Drawing.Point(413, 355);
+            this.bntEntrar.Location = new System.Drawing.Point(413, 382);
             this.bntEntrar.Name = "bntEntrar";
-            this.bntEntrar.Size = new System.Drawing.Size(75, 23);
+            this.bntEntrar.Size = new System.Drawing.Size(75, 25);
             this.bntEntrar.TabIndex = 2;
             this.bntEntrar.Text = "&Entrar";
             this.bntEntrar.UseVisualStyleBackColor = true;
@@ -99,9 +101,9 @@ namespace ConsultorioMedico
             // 
             // btnSair
             // 
-            this.btnSair.Location = new System.Drawing.Point(518, 355);
+            this.btnSair.Location = new System.Drawing.Point(518, 382);
             this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(75, 23);
+            this.btnSair.Size = new System.Drawing.Size(75, 25);
             this.btnSair.TabIndex = 3;
             this.btnSair.Text = "&Sair";
             this.btnSair.UseVisualStyleBackColor = true;
@@ -109,9 +111,9 @@ namespace ConsultorioMedico
             // 
             // frmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 561);
+            this.ClientSize = new System.Drawing.Size(784, 604);
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.bntEntrar);
             this.Controls.Add(this.txtSenha);

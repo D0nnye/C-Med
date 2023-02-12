@@ -35,5 +35,12 @@ namespace ConsultorioMedico
             RemoveMenu(hMenu, MenuCount, MF_BYCOMMAND);
 
         }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            frmMenuPrincipal voltar = new frmMenuPrincipal();
+            voltar.Show();
+            this.Hide();
+        }
     }
 }

@@ -51,7 +51,7 @@ namespace ConsultorioMedico
             abrir.ShowDialog();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void btnVoltar_Click(object sender, EventArgs e)
         {
             frmMenuPrincipal voltar = new frmMenuPrincipal();
             voltar.Show();
