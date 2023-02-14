@@ -30,61 +30,62 @@ namespace ConsultorioMedico
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEspecialidades));
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnPesquisar = new System.Windows.Forms.Button();
+            this.btnExcluir = new System.Windows.Forms.Button();
+            this.btnAlterar = new System.Windows.Forms.Button();
+            this.btnCadastrar = new System.Windows.Forms.Button();
             this.gpbEspecialidade = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.lblNome = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.gpbEspecialidade.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button4
+            // btnPesquisar
             // 
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(638, 240);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(150, 65);
-            this.button4.TabIndex = 8;
-            this.button4.Text = "&Pesquisar";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnPesquisar.Image = ((System.Drawing.Image)(resources.GetObject("btnPesquisar.Image")));
+            this.btnPesquisar.Location = new System.Drawing.Point(638, 240);
+            this.btnPesquisar.Name = "btnPesquisar";
+            this.btnPesquisar.Size = new System.Drawing.Size(150, 65);
+            this.btnPesquisar.TabIndex = 8;
+            this.btnPesquisar.Text = "&Pesquisar";
+            this.btnPesquisar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnPesquisar.UseVisualStyleBackColor = true;
+            this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
             // 
-            // button3
+            // btnExcluir
             // 
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(638, 169);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(150, 65);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "&Excluir";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnExcluir.Image = ((System.Drawing.Image)(resources.GetObject("btnExcluir.Image")));
+            this.btnExcluir.Location = new System.Drawing.Point(638, 169);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(150, 65);
+            this.btnExcluir.TabIndex = 7;
+            this.btnExcluir.Text = "&Excluir";
+            this.btnExcluir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnExcluir.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnAlterar
             // 
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(638, 98);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(150, 65);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "&Alterar";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnAlterar.Image = ((System.Drawing.Image)(resources.GetObject("btnAlterar.Image")));
+            this.btnAlterar.Location = new System.Drawing.Point(638, 98);
+            this.btnAlterar.Name = "btnAlterar";
+            this.btnAlterar.Size = new System.Drawing.Size(150, 65);
+            this.btnAlterar.TabIndex = 6;
+            this.btnAlterar.Text = "&Alterar";
+            this.btnAlterar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnAlterar.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnCadastrar
             // 
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(638, 27);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 65);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "&Cadastrar";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnCadastrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCadastrar.Image")));
+            this.btnCadastrar.Location = new System.Drawing.Point(638, 27);
+            this.btnCadastrar.Name = "btnCadastrar";
+            this.btnCadastrar.Size = new System.Drawing.Size(150, 65);
+            this.btnCadastrar.TabIndex = 5;
+            this.btnCadastrar.Text = "&Cadastrar";
+            this.btnCadastrar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnCadastrar.UseVisualStyleBackColor = true;
             // 
             // gpbEspecialidade
             // 
@@ -99,6 +100,23 @@ namespace ConsultorioMedico
             this.gpbEspecialidade.TabIndex = 10;
             this.gpbEspecialidade.TabStop = false;
             this.gpbEspecialidade.Text = "Especialidades";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Enabled = false;
+            this.textBox1.Location = new System.Drawing.Point(40, 85);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 26);
+            this.textBox1.TabIndex = 8;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(36, 61);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(59, 20);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Código";
             // 
             // lblNome
             // 
@@ -116,33 +134,16 @@ namespace ConsultorioMedico
             this.txtNome.Size = new System.Drawing.Size(457, 26);
             this.txtNome.TabIndex = 2;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(36, 61);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 20);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Código";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(40, 85);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 26);
-            this.textBox1.TabIndex = 8;
-            // 
             // frmEspecialidades
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 342);
             this.Controls.Add(this.gpbEspecialidade);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnPesquisar);
+            this.Controls.Add(this.btnExcluir);
+            this.Controls.Add(this.btnAlterar);
+            this.Controls.Add(this.btnCadastrar);
             this.Name = "frmEspecialidades";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmEspecialidades";
@@ -153,10 +154,10 @@ namespace ConsultorioMedico
         }
 
         #endregion
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnPesquisar;
+        private System.Windows.Forms.Button btnExcluir;
+        private System.Windows.Forms.Button btnAlterar;
+        private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.GroupBox gpbEspecialidade;
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.TextBox txtNome;
