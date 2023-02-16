@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+//Correio
+using Correios.Net;
 
 
 namespace ConsultorioMedico
@@ -58,10 +60,34 @@ namespace ConsultorioMedico
             txtNome.Focus();
         }
 
+        public void limparCampos()
+        {
+            txtCodigo.Text = "";
+            txtNome.Text = "";
+            txtBairro.Text = "";
+            txtCidade.Text = "";
+            txtEmail.Text = "";
+            txtEndereco.Text = "";
+            mkbCPF.Text = "";
+            mkbCEP.Text = "";
+            mkbTelefone.Text = "";
+            cbbEstado.Text = "";
+        }
+        //Metodo para carregar a ComboBox
+        public void carregarComboBox()
+        {
+            cbbEstado.Items.Add("SP");
+            cbbEstado.Items.Add("RJ");
+            cbbEstado.Items.Add("BH");
+            cbbEstado.Items.Add("BA");
+            cbbEstado.Items.Add("RN");
+        }
+        //Construtor da classe
         public frmPacientes()
         {
             InitializeComponent();
             desabilitarCampos();
+            carregarComboBox();
         }
 
         private void frmPacientes_Load(object sender, EventArgs e)
@@ -81,6 +107,62 @@ namespace ConsultorioMedico
         private void btnNovo_Click(object sender, EventArgs e)
         {
             habilitarCampos();
+        }
+
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+            //Executando o método verificarCampo
+            verificarCampo();
+        }
+
+        //Criando metodo para verificar campo vazio
+        public void verificarCampo()
+        {
+            //if (txtNome.Text == "")
+            //{
+            //    MessageBox.Show("Inserir valores");
+            //}
+
+            if (txtNome.Text.Equals("") || txtEmail.Text.Equals("") 
+                || mkbCPF.Text.Equals("   .   .   -") 
+                || mkbTelefone.Text.Equals("(  )      -") 
+                || mkbCEP.Text.Equals("     -")
+                || txtBairro.Text.Equals("")
+                || txtCidade.Text.Equals("")
+                || cbbEstado.Text.Equals(""))
+
+            {
+                MessageBox.Show("Inserir valores", "Mensagem do Sistema",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information,
+                    MessageBoxDefaultButton.Button1);
+                txtNome.Focus();
+            }
+            else
+            {
+                MessageBox.Show("Cadastrado com sucesso","Mensagem do Sistema",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information,
+                    MessageBoxDefaultButton.Button1);
+                desabilitarCampos();
+                limparCampos();
+            }
+
+        }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            limparCampos();
+            txtNome.Focus();
+        }
+
+        private void btnCarregaEndereco_Click(object sender, EventArgs e)
+        {
+            Address add;
+            add = SearchZip.GetAddress(mkbCEP.Text, 1000);
+
+            txtEndereco.Text = add.Street;
+            txtBairro.Text = add.District;
+            txtCidade.Text = add.City;
+            cbbEstado.Text = add.State;
         }
     }
 }

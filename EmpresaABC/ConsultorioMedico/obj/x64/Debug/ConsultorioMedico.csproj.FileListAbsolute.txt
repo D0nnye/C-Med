@@ -41,7 +41,6 @@ C:\Users\Don\Documents\Visual Studio 2022\C-Med\EmpresaABC\ConsultorioMedico\obj
 C:\Users\lucas.sleocadio\Documents\Visual Studio 2019\C-Med\EmpresaABC\ConsultorioMedico\bin\x64\Debug\ConsultorioMedico.exe.config
 C:\Users\lucas.sleocadio\Documents\Visual Studio 2019\C-Med\EmpresaABC\ConsultorioMedico\bin\x64\Debug\ConsultorioMedico.exe
 C:\Users\lucas.sleocadio\Documents\Visual Studio 2019\C-Med\EmpresaABC\ConsultorioMedico\bin\x64\Debug\ConsultorioMedico.pdb
-C:\Users\lucas.sleocadio\Documents\Visual Studio 2019\C-Med\EmpresaABC\ConsultorioMedico\obj\x64\Debug\ConsultorioMedico.csproj.AssemblyReference.cache
 C:\Users\lucas.sleocadio\Documents\Visual Studio 2019\C-Med\EmpresaABC\ConsultorioMedico\obj\x64\Debug\ConsultorioMedico.frmAgendas.resources
 C:\Users\lucas.sleocadio\Documents\Visual Studio 2019\C-Med\EmpresaABC\ConsultorioMedico\obj\x64\Debug\ConsultorioMedico.frmConsultas.resources
 C:\Users\lucas.sleocadio\Documents\Visual Studio 2019\C-Med\EmpresaABC\ConsultorioMedico\obj\x64\Debug\ConsultorioMedico.frmConvenio.resources
@@ -58,3 +57,7 @@ C:\Users\lucas.sleocadio\Documents\Visual Studio 2019\C-Med\EmpresaABC\Consultor
 C:\Users\lucas.sleocadio\Documents\Visual Studio 2019\C-Med\EmpresaABC\ConsultorioMedico\obj\x64\Debug\ConsultorioMedico.csproj.CoreCompileInputs.cache
 C:\Users\lucas.sleocadio\Documents\Visual Studio 2019\C-Med\EmpresaABC\ConsultorioMedico\obj\x64\Debug\ConsultorioMedico.exe
 C:\Users\lucas.sleocadio\Documents\Visual Studio 2019\C-Med\EmpresaABC\ConsultorioMedico\obj\x64\Debug\ConsultorioMedico.pdb
+C:\Users\lucas.sleocadio\Documents\Visual Studio 2019\C-Med\EmpresaABC\ConsultorioMedico\bin\x64\Debug\Correios.Net.dll
+C:\Users\lucas.sleocadio\Documents\Visual Studio 2019\C-Med\EmpresaABC\ConsultorioMedico\bin\x64\Debug\Correios.Net.pdb
+C:\Users\lucas.sleocadio\Documents\Visual Studio 2019\C-Med\EmpresaABC\ConsultorioMedico\obj\x64\Debug\ConsultorioMedico.csproj.AssemblyReference.cache
+C:\Users\lucas.sleocadio\Documents\Visual Studio 2019\C-Med\EmpresaABC\ConsultorioMedico\obj\x64\Debug\ConsultorioMedico.csproj.CopyComplete
